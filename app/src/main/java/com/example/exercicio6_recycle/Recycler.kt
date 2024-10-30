@@ -16,11 +16,5 @@ class RecyclerActivity : AppCompatActivity() {
         // Inicializando a lista
         myList = ArrayList()
 
-        // Populando a lista com 500 objetos Place
-        for (i in 0 until 500) {
-            myList.add(Place("Country $i", i * 500, "Capital $i"))
-        }
-
-        // Aqui você pode configurar o RecyclerView, adaptador etc.
     }
 }

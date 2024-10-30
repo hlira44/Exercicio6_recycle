@@ -23,10 +23,18 @@ class MainActivity : AppCompatActivity() {
 
         val myList = ArrayList<Place>()
 
-        for (i in 0 until 500) {
+        /*for (i in 0 until 500) {
 
             myList.add(Place("Country $i", i * 500, "Capital $i"))
-        }
+        }*/
+
+        myList.add(Place("Portugal", 22312463, "Lisboa"))
+        myList.add(Place("Espanha", 22325453, "Madrid"))
+        myList.add(Place("Itália", 212323123, "Roma"))
+        myList.add(Place("França", 221245645, "Paris"))
+
+
+
 
         val recycler_view: RecyclerView = findViewById(R.id.recycler_view)
         recycler_view.adapter = LineAdapter(myList)
